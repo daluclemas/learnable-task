@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-section {
+  width: 90%;
+  margin: auto;
+  padding: 20px 0;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.logo-text a {
+  color: #000;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.menu-icon {
+  color: #e87a14;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.hero {
+  margin-top: 40px;
+
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 30px;
+}
+
+article {
+  margin-top: 30px;
+}
+
+article h2 {
+  color: rgba(68, 195, 235, 0.8);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+article p {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+figure {
+  max-width: 500px;
+  height: 600px;
+  margin: auto;
+}
+
+figure img {
+  width: 100%;
+  height: 100%;
+}
+
+.buy-now {
+  margin: 20px 0;
+  background: #e87a14;
+  width: fit-content;
+  width: -moz-fit-content;
+  border-radius: 20px;
+}
+
+.buy-now a {
+  background-color: transparent;
+  display: inline-block;
+  padding: 20px 45px;
+  color: white;
+  font-size: 16px;
+}
+
+@media (max-width: 991px) {
+  .nav-menu {
+    position: fixed;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    max-width: 250px;
+    width: 100%;
+    background-color: #e87a14;
+    color: white;
+    transform: translateX(-500px);
+    transition: 0.3s linear;
+  }
+
+  .active {
+    transform: translateX(0);
+  }
+
+  .menu-links {
+    margin-top: 30px;
+  }
+
+  .menu-links li {
+    margin: 20px 0;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+
+  .menu-links li:hover,
+  .onboard-btns li a:hover {
+    color: #000;
+  }
+
+  .onboard-btns .signup > a {
+    background-color: transparent;
+    color: #e87a14;
+    padding: 10px 20px;
+    display: inline-block;
+  }
+
+  .signup {
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid white;
+    transition: 0.3s linear;
+    width: fit-content;
+    width: -moz-fit-content;
+  }
+
+  .signup:hover {
+    background-color: transparent;
+  }
+
+  .onboard-btns .signup:hover > a {
+    color: white;
+  }
+
+  .onboard-btns {
+    margin-top: 40px;
+  }
+
+  .onboard-btns li {
+    margin: 20px 0;
+    cursor: pointer;
+  }
+
+  .onboard-btns li a {
+    color: white;
+
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+
+  .hamburger-icon {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .logo-text a {
+    font-size: 32px;
+  }
+
+  header {
+    gap: 20px;
+  }
+
+  .nav-menu {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+  }
+
+  .nav-menu ul {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-links {
+    gap: 30px;
+  }
+
+  .menu-links li {
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: 400;
+  }
+
+  .menu-links li:hover {
+    color: #e87a14;
+  }
+
+  .onboard-btns {
+    gap: 20px;
+  }
+
+  .onboard-btns li a {
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 400;
+  }
+
+  .login a:hover {
+    color: #e87a14;
+  }
+
+  .signup {
+    background-color: #e87a14;
+    border-radius: 15px;
+    border: 2px solid #e87a14;
+    transition: 0.3s linear;
+  }
+
+  .signup:hover {
+    background-color: transparent;
+  }
+
+  .onboard-btns .signup:hover > a {
+    color: #e87a14;
+  }
+
+  .onboard-btns .signup > a {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+  }
+
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  figure {
+    max-width: 627px;
+    height: 700px;
+  }
+
+  article {
+    margin-top: 0;
+    max-width: 450px;
+  }
+
+  article h2 {
+    font-size: 20px;
+  }
+
+  article p {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+}

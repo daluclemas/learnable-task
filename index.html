@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Viss Fashions</title>
+</head>
+
+<body>
+  <main class="container">
+    <section class="hero-section">
+      <header>
+        <div class="hamburger-icon">
+          <h1 class="logo-text">
+            <a href="/index.html">Viss Fashions</a>
+          </h1>
+
+          <button class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+        <nav class="nav-menu">
+          <ul class="menu-links">
+            <li>about</li>
+            <li>clothing</li>
+            <li>accessories</li>
+            <li>services</li>
+          </ul>
+
+          <ul class="onboard-btns">
+            <li class="login"><a href="./login.html">log in</a></li>
+            <li class="signup">
+              <a href="#"> sign up</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <article>
+          <h2>trendiest fashion ever</h2>
+          <p>When you are in doubt, wear a Viss Fashions Denim</p>
+
+          <div class="buy-now">
+            <a href="#">Buy now</a>
+          </div>
+        </article>
+
+        <div class="img-wrapper">
+          <figure>
+            <img src="./man-photo.png" alt="man-pics" />
+          </figure>
+        </div>
+      </section>
+    </section>
+  </main>
+  <script>
+    const menuIcon = document.querySelector(".menu-icon");
+    const nav = document.querySelector(".nav-menu");
+
+    menuIcon.addEventListener("click", function () {
+      nav.classList.toggle("active");
+    });
+  </script>
+</body>
+
+</html>
